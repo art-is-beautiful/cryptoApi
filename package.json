@@ -1,0 +1,47 @@
+{
+  "name": "cryptoApiKoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "nodemon src/app.ts",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./config/database.ts",
+    "makemigrations": "rd /s /q build && npm run build && yarn run typeorm migration:generate -n CreateCryptoAndPricesTables ",
+    "migrate": "rd /s /q build && npm run build && yarn run typeorm migration:run"
+  },
+  "keywords": [],
+  "author": "Artem Chornyi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "config": "^3.3.7",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-joi-router": "6.0.0",
+    "koa-joi-router-docs": "1.2.1",
+    "koa2-swagger-ui": "^5.5.1",
+    "pg": "8.6.0",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.9.0",
+    "typeorm": "0.2.37",
+    "ws": "^8.6.0"
+  },
+  "devDependencies": {
+    "@hapi/joi": "15.1.0",
+    "@koa/cors": "^3.3.0",
+    "@types/config": "0.0.41",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-joi-router": "5.2.4",
+    "@types/koa-joi-router-docs": "1.0.0",
+    "@types/koa__cors": "^3.3.0",
+    "@types/ws": "^8.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.6.4"
+  }
+}

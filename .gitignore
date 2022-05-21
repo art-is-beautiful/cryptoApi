@@ -1,0 +1,17 @@
+#  IDE
+.idea/
+.vscode/
+
+# JS
+node_modules/
+build/
+
+# Project
+config/
+.env
+yarn-error.log
+.log
+yarn.lock
+
+# MacOS
+.DS_Store
