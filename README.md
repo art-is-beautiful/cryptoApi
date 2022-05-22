@@ -20,3 +20,4 @@ Open <i>http://localhost:3000/docs</i> to use a swagger documentation.
   <li>docker compose up</li>
 </ul>
 
+Open <i>http://localhost:3000/docs</i> to use a swagger documentation.
