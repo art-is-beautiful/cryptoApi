@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "start": "node build/src/app.js",
+    "build": "tsc -p .",
+    "start:docker": "npm run build && npm run start",
     "watch": "nodemon src/app.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./config/database.ts",
     "makemigrations": "rd /s /q build && npm run build && yarn run typeorm migration:generate -n CreateCryptoAndPricesTables ",
