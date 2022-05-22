@@ -13,8 +13,8 @@ Open <i>http://localhost:3000/docs</i> to use a swagger documentation.
 ======================================================================
 
 
-<strong>Run this app by Docker</strong>
-<i>\n be shure that your docker is running</i>
+<strong>Run this app by Docker</strong> <br />
+<i>be shure that your docker is running</i>
 
 <ul>
   <li>docker compose up</li>
