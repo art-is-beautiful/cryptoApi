@@ -14,7 +14,7 @@ Open <i>http://localhost:3000/docs</i> to use a swagger documentation.
 
 
 <strong>Run this app by Docker</strong>
-<i>be shure that your docker is running</i>
+<i>\n be shure that your docker is running</i>
 
 <ul>
   <li>docker compose up</li>
