@@ -3,7 +3,7 @@
 Run this app by node command:
 
 <ul>
-  <li>npm intall</li>
+  <li>npm install</li>
   <li>npm run build</li>
   <li>npm run watch</li>
 </ul>
