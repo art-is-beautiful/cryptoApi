@@ -8,7 +8,7 @@ build/
 
 # Project
 # config/
-# .env
+.env
 # .log
 
 
